@@ -1,1 +1,35 @@
-# marcoffee-ysl.github.io
+# Marc Gabriel S. Sagubo — Portfolio
+
+Static personal portfolio for GitHub Pages, using HTML, CSS, and vanilla JavaScript. No build step, dependencies, backend, or API keys.
+
+## Local preview
+
+Open `index.html` in a browser, or run `python -m http.server 8000` in this directory and visit http://localhost:8000.
+
+## Files and editing
+
+- `index.html`: identity, About, projects, skills, interests, pending certificate and resume sections, and contact links.
+- `styles.css`: Editorial Monochrome design, responsive layout, focus states, and reduced-motion support.
+- `script.js`: mobile navigation and optional certificate gallery/dialog and resume download behavior.
+- `content.js`: approved certificate metadata and resume path. Certificates are currently empty and resume is `null`; both sections retain their pending placeholders.
+- `assets/marc-sagubo-profile.jpg`: supplied profile photo in About.
+- `assets/projects/reef-finds/`: supplied Notifications, Home Page, and Profile screenshots.
+- `assets/projects/etdms/`: supplied dashboard and mobile sign-in screenshots.
+
+All references are relative and use case-sensitive filenames compatible with GitHub Pages. Project screenshots open their originals in a new tab. Reef Finds screenshots retain the supplied low resolution. ETDMS remains labeled as an ongoing team academic project; dashboard figures are not claims of real usage.
+
+## Pending certificates and resume
+
+Neither certificate documents/images nor resume documents are included in this publication. `.gitignore` excludes their local asset locations, PDF/Word documents, archives, and local-only tooling. Keep source materials outside the published repository.
+
+When approved for publication, review genuine certificate titles, issuers, dates, and sanitized images. Remove signatures, QR codes, sensitive identifiers, and unnecessary personal details. Add only reviewed public assets and their configuration in `content.js`; intentionally update the relevant ignore rules when doing so. The existing gallery groups certificates by `folder` and sorts titles within each group. For a resume, supply an approved public PDF and update both `content.js` and the fallback button in `index.html`. Never add confidential originals to Git history.
+
+## GitHub Pages
+
+Repository: https://github.com/marcoffee-ysl/marcoffee-ysl.github.io
+
+Pages is configured to deploy from `main` at `/ (root)`. `index.html`, CSS, JavaScript, and public assets live at the repository root. `.nojekyll` keeps this a plain static site. Push reviewed commits normally to `main`; never force-push. Check the repository's Pages deployment for completion at https://marcoffee-ysl.github.io/.
+
+## Verification
+
+Before publishing, validate all local asset paths with exact filename case and section anchors, check JavaScript syntax, and review the staged file list for documents or secrets. Check mobile Menu, keyboard focus, section links, reduced-motion support, contact links, and image links in a browser. With pending assets, the certificate empty state is visible and the resume button is disabled.

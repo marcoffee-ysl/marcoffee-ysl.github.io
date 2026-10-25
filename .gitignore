@@ -1,0 +1,16 @@
+# Private or pending local documents must not be published.
+/assets/certificates/
+/assets/*resume*
+/Open Portfolio.cmd
+*.docx
+*.pdf
+*.zip
+.env
+.env.*
+*.pem
+*.key
+# Local tooling and temporary files
+node_modules/
+work/
+.DS_Store
+Thumbs.db
