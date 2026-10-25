@@ -1,5 +1,5 @@
 # Private or pending local documents must not be published.
-/assets/certificates/
+/assets/certificates/*
 /assets/*resume*
 /Open Portfolio.cmd
 *.docx
@@ -14,3 +14,7 @@ node_modules/
 work/
 .DS_Store
 Thumbs.db
+
+# Explicitly approved public excerpts and resume, matching the reviewed browser preview.
+!/assets/certificates/*-redacted.webp
+!/assets/marc-sagubo-resume.pdf
